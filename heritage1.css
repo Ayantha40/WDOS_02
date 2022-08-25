@@ -1,0 +1,282 @@
+.topnav {
+  position:inherit;
+    background-color:#222;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color:aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: plum;
+    color: aqua;
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background:#04AA6D;
+    font-size: 15px;
+    border: solid;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .dropbtn {
+        background-color:darkslategrey;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+}
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: aqua;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:plum;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (yapahuwa.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./hero1.webp");
+
+  /* Set a specific height */
+  height: 80%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.container {
+    position: relative;
+    max-width: 1350px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color:aqua; /* Grey text */
+    width: 96%; /* Full width */
+    padding: 10px; /* Some padding */
+    font-size: 20px;
+  }
+
+  img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .button {
+    border-radius: 4px;
+    background-color:crimson;
+    border: none;
+    color:aqua;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .H1{
+    background-image: url(ya.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+  }
+
+  .footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#222;
+    color:aqua;
+    text-align:center;
+  }
+  .footer1 {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#222;
+    color:aqua;
+    text-align: center;
+  }
+
+  /*reference*/
+
+/*images 
+
+Web Site Logo.png Created by me */
+
+/*main image(yapahuwa stair) - Pinterest(2020) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/hero1.webp(Accessed June 2022)
+                               
+Pinterest(2016) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/yapahuwa2.webp(Accessed June 2022)
+
+Pinterest(2017) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/Yapahuwa-Rock-Fortress-4-1.webp(Accessed June 2022)
+
+Pinterest(2018) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/yapahuwa.webp(Accessed June 2022)
+
+Pinterest(2022) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/8-3-2048x2026.webp(Accessed June 2022)
+
+Pinterest(2021) Available at -file:///C:/Users/acer/OneDrive/Desktop/Web%20Final%20Assignment/IMG_0720.webp       n(Accessed June 2022)
+
+map of yapahuwa, Available at -https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.734753049457!2d80.30943161429123!3d7.817876008932359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afccfa54f63d679%3A0xf1ce6ec57aead109!2sYapahuwa%20Rock%20Fortress!5e0!3m2!1sen!2slk!4v1654045092387!5m2!1sen!2slk (Accessed June 2022)
+
+Content - Amazing Sri Lanka(2021) Available at - https://amazinglanka.com/wp/yapahuwa/ (Accessed June 2022)
+
+video Credits - https://youtu.be/wfyb3TAoMiU (Accessed June 2022)
+       

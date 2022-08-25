@@ -1,0 +1,510 @@
+.topnav {
+    position:inherit;
+      background-color:#222;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color:aqua;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: plum;
+      color: aqua;
+    }
+    
+    .topnav .search-container {
+      float: right;
+    }
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+    
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background:#04AA6D;
+      font-size: 15px;
+      border: solid;
+      cursor: pointer;
+    }
+    
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .dropbtn {
+          background-color:darkslategrey;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+  }
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: aqua;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+  /* Add a background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:plum;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width:100%
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color:aqua;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (heri1.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./L1.webp");
+  
+    /* Set a specific height */
+    height: 80%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:aqua;
+  }
+
+  .container {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    font-size: large;
+  }
+  
+  .container .content {
+    position:absolute; /* Position the background text */
+    bottom: 0%; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 0px; /* Some padding */
+    font-size: large;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .container1 {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    font-size: large;
+  }
+  
+  .container1 .content {
+    position:absolute; /* Position the background text */
+    bottom: 0%; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 0px; /* Some padding */
+    font-size: large;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+  .caption-container2 {
+    text-align:justify;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .container3 {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    font-size: large;
+  }
+  
+  .container3 .content {
+    position:absolute; /* Position the background text */
+    bottom: 0%; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 0px; /* Some padding */
+    font-size: large;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .caption-container3 {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    margin-left:-5px;
+    margin-right:-5px;
+    width: 100%;
+  }
+    
+  .column1{
+    float: left;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid aqua;
+  }
+  
+  th, td {
+    text-align: start;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: grey;
+  }
+.amara{
+  text-align: center;
+}
+  .footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#222;
+    color:aqua;
+    text-align:center;
+  }
+  .footer1 {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#222;
+    color:aqua;
+    text-align: center;
+  }  
+
+
+/*reference*/
+
+/*images 
+
+Web Site Logo.png Created by me */
+
+/*main image(Yala) - 
+Pinterest(2012) Available at - https://imgs.search.brave.com/uwlr6owT7sKY-UQPUK3ihg3NwoaivHoqAlHl0llF74Y/rs:fit:885:588:1/g:ce/aHR0cHM6Ly9uZXdz/LmxrL21lZGlhL2sy/L2l0ZW1zL2NhY2hl/L2E0MDhjMzcwNzFi/N2ZjMDU3NTIzY2Zi/N2NmZjZlMGE0X1hM/LmpwZw (Accessed June 2022)
+
+image gallery -
+
+ Pinterest(2011) Available at - https://imgs.search.brave.com/uwxK2m1MlnNFAU1rCCpHIBOC1AVAjNwoBrIH83OvnnE/rs:fit:1200:795:1/g:ce/aHR0cHM6Ly93d3cu/d2VsaWdhbWFiYXly/ZXNvcnQuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy95YWxhLmpw/Z  (Accessed June 2022)
+                 
+Pinterest(2020) Available at - https://imgs.search.brave.com/acxXsw5TeC1Dc67Nxi3VFzc-KaTfdMkGBZaPvZ3Y9uo/rs:fit:1200:801:1/g:ce/aHR0cHM6Ly9scC1j/bXMtcHJvZHVjdGlv/bi5pbWdpeC5uZXQv/MjAxOS0wNi9HZXR0/eUltYWdlcy01Mjk0/OTQ4NDFfc3VwZXIu/anBnP3NoYXJwPTEw/JnZpYj0yMCZ3PTEy/MDA (Accessed June 2022)
+
+Pinterest(2021) Available at - https://imgs.search.brave.com/lgjdodVRwBkL1U09_Z_MTSALdL1L4b7uIlqSA0v0CQc/rs:fit:1024:683:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2FmL0Vh/Z2xlX2luX1lhbGFf/TmF0aW9uYWxfUGFy/a18yLkpQRy8xMDI0/cHgtRWFnbGVfaW5f/WWFsYV9OYXRpb25h/bF9QYXJrXzIuSlBH (Accessed June 2022)
+
+Pinterest(2012) Available at - https://imgs.search.brave.com/GKpMCEkJbKKHrLciVU7nPXBGcXnptQAFGhpQSSg4PwE/rs:fit:1200:1024:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tRUlzRmotYklJ/MkEvVG9RVFFCbWNK/a0kvQUFBQUFBQUFB/QmsvZ2sxRXFPU0Y2/aVkvczE2MDAvU3Jp/X0xhbmthX1lhbGFf/TmF0aW9uYWxfUGFy/a18xNi5qcGc(Accessed June 2022)
+
+Map of Yala, Available at - https://imgs.search.brave.com/PNt8EDZNFQN0o2Q-lndihxUlBLjTYso5RCrimaOyl0Q/rs:fit:960:557:1/g:ce/aHR0cHM6Ly9sYW5r/YS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkvMDEveWFs/YS1uYXRpb25hbC1w/YXJrLW1hcC5wbmc -(Accessed June 2022)
+
+/*main image(Wasgamuwa) - Pinterest(2020)Available at - https://srilanka.travel//image/data/001/attractions/Main-Images/Wasgamuwa-1.jpg(Accessed June 2022)
+
+Image Gallery -
+Pinterest(2020) Available at - https://imgs.search.brave.com/XInS_64p6KqI7_lCvU8V_OD_Ct6FeQVmTD5xiPYo-ns/rs:fit:800:600:1/g:ce/aHR0cHM6Ly93d3cu/c3JpbGFua2FlY290/b3VyaXNtLmxrL2xv/Y2F0aW9uX2ltZy8x/NDg5NjY3MDU3d2Fz/Z2FtdV8yLmpwZw(Accessed June 2022)
+
+Pinterest(2022) Available at -https://imgs.search.brave.com/D02c9CvwCO2wP0cP4RG_Xs2Eg2G3SyhVZXacZVWvdnM/rs:fit:800:600:1/g:ce/aHR0cHM6Ly93d3cu/dGxjLmxrL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA2L1dh/c2dhbXV3YS1jYW5z/dG9ja3Bob3RvMjE3/MzQ1NC04MDB4NjAw/LmpwZw(Accessed June 2022)
+
+Pinterest(2011) Available at -https://imgs.search.brave.com/C2KezCPW_RKk8PitYIkbp6jrfgBX2lsEIlMTVF9CXuE/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly9saXZl/LnN0YXRpY2ZsaWNr/ci5jb20vNjU1MzUv/NTAwNzYwMTgxMDhf/MmI2MTViZTRjNl9i/LmpwZw(Accessed June 2022)
+
+Pinterest(2017) Available at -https://imgs.search.brave.com/Tvwp7yn5ACgEyG1v4del5KoZkqiP-NHV_DEdjn19o58/rs:fit:700:500:1/g:ce/aHR0cHM6Ly9zcmls/YW5rYWZpbmRlci5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMTIvd2FzZ2Ft/dXdhLWJpcmQtNzAw/eDUwMC5qcGc(Accessed June 2022)
+
+Map Of Wasgamuwa, Available at -https://imgs.search.brave.com/0ympbzOnZEA57Nr4MuQTPa6hEiyCtrBalYpxj_9VyxA/rs:fit:882:463:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tQWRtbE85S282/SXMvV2VRenBCSTE4/aEkvQUFBQUFBQUFF/T2cvMzdObkFVdWV6/UkVFZnVBQkZXTnFf/d3pRU1c2Z2RZVmxR/Q0xjQkdBcy93MTIw/MC1oNjMwLXAtay1u/by1udS8xLnBuZw(Accessed June 2022)
+
+/*main image(Kumana) - Pinterest(2021) Available at -https://srilanka.travel//image/data/001/attractions/Main-Images/Kumana-1.jpg(Accessed June 2022)
+
+Pinterest(2009) Available at -Image Gallery - https://imgs.search.brave.com/1xnQSs2I2D4AaOUjp9tlgaTCyUoxhYldIa2Y9N8cUQE/rs:fit:800:600:1/g:ce/aHR0cDovL3NyaWxh/bmthZWNvdG91cmlz/bS5say9sb2NhdGlv/bl9pbWcvMTQ4OTY1/ODY5N2t1bWFuYV9w/YXJrX25ld181Lmpw/Zw(Accessed June 2022)
+
+Pinterest(2013) Available at -https://imgs.search.brave.com/HDJZmqVIuV4Q7HmYtoJlG9wM2XrNQpUWDhX_WdSt4_o/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly9jMS5z/dGF0aWNmbGlja3Iu/Y29tLzMvMjc3Ny80/MzMyNzY2NTg2X2Nj/ZTc3MjkwZjdfYi5q/cGc(Accessed June 2022)
+
+Pinterest(2012) Available at -https://imgs.search.brave.com/SJtnTQIY1Mb4eRvFSOHniAFcXs2jOxxqIFYlLqx_20o/rs:fit:800:600:1/g:ce/aHR0cHM6Ly93d3cu/YmVzdG9mbGFua2Eu/Y29tL2ltYWdlcy9y/ZWNvbW1lbmRlZC1z/dGF5cy1zcmktbGFu/a2Evc3RheS1pbi10/aGUtc2FmYXJpLWFu/ZC13aWxkbGlmZS1z/cmktbGFua2Eva3Vt/YW5hX3NhZmFyaV9j/YW1wL2JveC8wMi5q/cGc(Accessed June 2022)
+
+Pinterest(2022) Available at -https://imgs.search.brave.com/a9qPSiVufQl5PG8NdPKOsAkk82_t-bjG_s_NRKUkzdU/rs:fit:800:600:1/g:ce/aHR0cHM6Ly9rdW1h/bmFuYXRpb25hbHBh/cmsuY29tL2ltYWdl/cy9rdW1hbmFfbmF0/aW9uYWxfcGFyay90/aHVtYi8xNy5qcGv(Accessed June 2022)
+
+Map of Kumana, Available at -https://imgs.search.brave.com/OIx6JEhoWQLUKznK7TgZBDOH-MLSgBiEUnLFQVhkmYE/rs:fit:432:242:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnNy/aWxhbmthbnJpZGVy/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDgva3Vt/YW5hLW1hcC5qcGc_/cmVzaXplPTQzMiUy/QzI0MiZzc2w9MQ (Accessed June 2022)
+
+
+Table Images -
+Pinterest(2022) Available at -https://www.mahoora.com/images/2019/01/28/leopard-kote.jpg(Accessed June 2022)
+
+Pinterest(2006) Available at -https://imgs.search.brave.com/dpGT-zuDkpt_ABtoKk2ug98xChBtkqV1yMrpQ2F0-mA/rs:fit:1024:678:1/g:ce/aHR0cHM6Ly9saXZl/LnN0YXRpY2ZsaWNr/ci5jb20vMTgwMS80/MzE0OTY5MzcwMl85/ZWM3YzY1NzdjX2Iu/anBn(Accessed June 2022)
+
+Pinterest(2012) Available at -https://www.natureodyssey.com/wp-content/uploads/2018/09/Ashy-headed-Laughing-Thrush.jpg(Accessed June 2022)
+
+Pinterest(2011) Available at -https://www.natureodyssey.com/wp-content/uploads/2018/09/Serendib-Scops-%E2%80%93Owl.jpg(Accessed June 2022)
+
+Pinterest(2020) Available at -https://imgs.search.brave.com/9fXJoak75BvGQWaaCXIyY4f8L3MZNoKV_Jkv40QCr9c/rs:fit:1024:678:1/g:ce/aHR0cHM6Ly9mYXJt/NS5zdGF0aWNmbGlj/a3IuY29tLzQ1Nzkv/MjcxMTU3OTgyNzlf/YWY2YWIyYzkwMV9i/LmpwZw(Accessed June 2022)
+
+Content -
+Corporate Website of the Sri Lanka Tourism Development Authorit(2022) Available at - https://www.srilanka.travel/(Accessed June 2022)
+
+Tourist Web site of Lakpura LLC(2021) Available at - https://lk.lakpura.comshpxid=e01f4db8-4bf9-4053-b2d7-83448877a80d (Accessed May 2022)
+
+
+The Traveler's Portal(2018), yala web site  Available at -https://www.yalasrilanka.lk/ (Accessed June 2022)
